@@ -1,0 +1,10 @@
+.plansza{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+}
+.btnPlansza{
+    margin:10px;
+    border: 0px;
+    background: none;
+}

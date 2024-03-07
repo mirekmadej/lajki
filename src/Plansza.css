@@ -1,10 +1,26 @@
 .plansza{
-    width: 400px;
-    height: 500px;
-    border: 1px solid black;
+    width: 350px;
+    height: 400px;
+    
+    float:left;
 }
 .btnPlansza{
     margin:10px;
     border: 0px;
     background: none;
+}
+.grafika{
+    margin:auto;
+    display: block;
+}
+.blok{
+    height: 20px;
+    width: 300px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+#blok2{
+    height: 20px;
+    width: 150px;
+    background-color: aquamarine;
 }

@@ -13,7 +13,8 @@ function App() {
     <div className="App">
       <h1>lajki</h1>
       <Plansza k={grafiki[0]} />
-      <Plansza k={grafiki[1]} />
+      <Plansza k={grafiki[0]} />
+      
     </div>
   );
 }

@@ -21,7 +21,8 @@
     border: 1px solid black;
     background-color: blueviolet;
 }
-#blok2{
+
+.blok div{
     height: 20px;
     width: 150px;
     background-color: aquamarine;

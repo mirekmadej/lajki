@@ -6,7 +6,7 @@ import { useState } from 'react';
 function Plansza({k}) {
     let [like, setLike] = useState(0);
     let [dislike, setDislike] = useState(0);
-
+    let id='pasek'+k.id;
     return(
         <div className="plansza">
             <p>
@@ -21,8 +21,9 @@ function Plansza({k}) {
             </button>
             <p>lubi: {like}</p>
             <p>nie lubi: {dislike}</p>
+            
             <div className='blok'>
-                <div id='blok2'></div>
+                <div id={id}></div>
             </div>
 
         </div>
@@ -32,8 +33,8 @@ function Plansza({k}) {
         setLike(like+1);
         let ile = like/(like+dislike);
         ile = ile*300;
-        console.log(ile);
-        document.getElementById('blok2').style.width=ile+'px';
+        console.log(id);
+        document.getElementById(id).style.width=ile+'px';
 
     }
     function funDislike()
@@ -42,7 +43,7 @@ function Plansza({k}) {
         let ile = like/(like+dislike);
         ile = ile*300;
         console.log(ile);
-        document.getElementById('blok2').style.width=ile+'px';
+        document.getElementById(id).style.width=ile+'px';
     }
 }
 
